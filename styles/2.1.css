@@ -1,9 +1,27 @@
 body {font-family: Arial;}
 h1 {
     font-size: 32pt;
-    text-align: center;
+    font-family: Verdana;
 }
 p {
-    font-size: 14pt;
-    text-align: justify;
+    font-size: 14pt !important;
 }
+p.greeting{
+    font-size: 24pt;
+}
+.picture img{
+    width: 67%;
+}
+.name {
+    font-weight: normal;
+}
+.advertising {
+    margin-left: 30pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-size: 12 pt;
+}
+header {text-align: center;}
+main{text-align: justify;}
+footer{text-align: right;}
+.bigger{font-size: 16pt;}
