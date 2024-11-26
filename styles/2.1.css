@@ -1,7 +1,32 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar-Dreams/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar-Dreams/CaviarDreams_Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url(../fonts/Caviar-Dreams/CaviarDreams_BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {font-family: Arial;}
 h1 {
     font-size: 32pt;
     font-family: Verdana;
+    text-shadow: 3pt 3pt 5pt darkgrey;
 }
 p {
     font-size: 14pt !important;
@@ -65,3 +90,29 @@ nav div {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+table.catalog tr:first-child td {border-top: none;}
+
+table.catalog tr:last-child td {border-bottom: none;}
+
+table.catalog td p:first-of-type::first-letter {
+    font-size: 24pt;
+}
+
+table.pricelist th[colspan="2"]{text-align: center;}
+
+table.pricelist td:last-child:not(:only-child){border: none; background-color: lightgrey;}
+
+table.catalog h3 {
+    font-family: "Caviar Dreams";
+    font-size: 20 pt;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: 2pt;
+}
+
+table.catalog p::first-letter{
+    vertical-align: top;
+}
+
+table.catalog h3::after {content: ':';}
