@@ -36,10 +36,13 @@ p.greeting{
 }
 .picture img{
     width: 67%;
+    min-width: 500px;
+    max-width: 700px;
 }
 .name {
     font-weight: normal;
 }
+h1 em {font-weight: normal;}
 .advertising {
     margin-left: 30pt;
     margin-top: 5pt;
@@ -48,7 +51,13 @@ p.greeting{
 }
 header {text-align: center;}
 main{text-align: justify;}
-footer{text-align: right;}
+footer{
+    text-align: right;
+    border-top: 2pt dashed lightgrey;
+    width: 50%;
+    min-width: 300px;
+    margin-left: 50%;
+}
 .bigger{font-size: 16pt;}
 table.pricelist th, table.pricelist td {
     border: grey thin solid;
@@ -63,7 +72,7 @@ table.catalog td{
 }
 
 table.catalog img {
-    width: 200 px;
+    width: 100%;
 }
 
 table.pricelist thead th {
@@ -81,8 +90,10 @@ nav {
     width: 150px;
     margin: 10px 30px 10px 0px;
     padding: 10px;
-    border: black medium double;
-    border-radius: 10px;
+    box-shadow: 4px 4px 1px 1px darkgrey;
+    box-shadow: 0px 0px 5px 5px  darkgray inset, 
+    0px 0px 5px 5px darkgray;
+    margin-right: 40px;
 }
 
 nav div {
@@ -116,3 +127,57 @@ table.catalog p::first-letter{
 }
 
 table.catalog h3::after {content: ':';}
+
+ol {list-style-type: upper-roman;}
+
+table.catalog {
+    width: 70%;
+    min-width: 12cm;
+}
+
+table.catalog td:first-child{
+    width: 50%;
+}
+
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:active, nav a:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+form {
+    width: 400px;
+    padding: 0px 10px;
+    border: thin dotted darkgrey;
+    border-radius: 5px;
+}
+
+form {
+    width: 400px;
+    padding: 0px 10px;
+    border: thin dotted darkgrey;
+    border-radius: 5px;
+}
+
+input, select {
+    font: 14pt Courier;
+    padding: 5px;
+    border: medium double black;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    font: bold 20pt Verdana;
+    text-transform: uppercase;
+    width: 250px;
+    border: thick solid black;
+    border-radius: 0px;
+}
+
+input[type=image] {
+    border-style: none;
+}
