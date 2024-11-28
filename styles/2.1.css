@@ -22,7 +22,10 @@
     font-style: italic;
 }
 
-body {font-family: Arial;}
+body {
+    font-family: Arial;
+    background-image: linear-gradient(to right top, salmon 0%, white 67%, salmon 100%);
+}
 h1 {
     font-size: 32pt;
     font-family: Verdana;
@@ -180,4 +183,17 @@ input[type=submit] {
 
 input[type=image] {
     border-style: none;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    background-color: red;
+    border-color: red;
 }
