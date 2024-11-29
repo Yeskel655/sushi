@@ -42,7 +42,10 @@ p.greeting{
     margin-bottom: 5pt;
     font-size: 12 pt;
 }
-main{text-align: justify;}
+main{
+    text-align: justify;
+    margin-left: 210px;
+}
 footer{
     text-align: right;
     background-color: white;
@@ -81,9 +84,6 @@ nav {
     width: 150px;
     margin: 10px 30px 10px 0px;
     padding: 10px;
-    box-shadow: 4px 4px 1px 1px darkgrey;
-    box-shadow: 0px 0px 5px 5px  darkgray inset, 
-    0px 0px 5px 5px darkgray;
     margin-right: 40px;
 }
 
