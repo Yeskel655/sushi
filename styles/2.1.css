@@ -24,7 +24,6 @@
 
 body {
     font-family: Arial;
-    background-image: repeating-linear-gradient(to right, white, bisque 5px, lightgrey 5px);
     margin: 0px;
 }
 p {
@@ -44,13 +43,20 @@ p.greeting{
 }
 main{
     text-align: justify;
-    margin-left: 210px;
+    left: 190px;
+    top: 100pt;
+    right: 0pt;
+    bottom: 120pt;
+    background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+    overflow: auto;
 }
 footer{
     text-align: right;
     background-color: white;
     height: 120pt;
-    position: relative;
+    left: 0pt;
+    right: 0pt;
+    bottom: 0pt;
 }
 .bigger{font-size: 16pt;}
 table.pricelist th, table.pricelist td {
@@ -80,11 +86,13 @@ table.pricelist tfoot td {
 }
 
 nav {
-    float: left;
     width: 150px;
-    margin: 10px 30px 10px 0px;
     padding: 10px;
     margin-right: 40px;
+    left: 0pt;
+    top: 100pt;
+    bottom: 120pt;
+    background-color: bisque;
 }
 
 nav div, nav a {
@@ -192,6 +200,9 @@ header{
     background-color: white;
     height: 80pt;
     margin-bottom: 20pt;
+    left: 0pt;
+    top:0pt;
+    right: 0pt;
 }
 
 .pos1, .pos2, .pos3, .pos4, .pos5{
@@ -250,3 +261,5 @@ header{
     font-weight: bold;
     text-align: center;
 }
+
+header, nav, main, footer {position: fixed;}
