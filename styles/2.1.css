@@ -44,6 +44,7 @@ p.greeting{
 }
 main{
     text-align: justify;
+    padding-right: 10px;
 }
 footer{
     text-align: right;
