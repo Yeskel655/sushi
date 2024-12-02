@@ -50,6 +50,7 @@ main{
     background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
     overflow: auto;
     padding-right: 10px;
+    padding-left: 10px;
 }
 footer{
     text-align: right;
