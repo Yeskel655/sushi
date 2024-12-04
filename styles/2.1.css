@@ -1,3 +1,23 @@
+@keyframes navlinks {
+    60% {color: black;}
+    100%{
+        color: darksalmon;
+        transform: translateX(10px);
+    }
+}
+@keyframes orderlink {
+    0% {background-color: white;
+        top: 28pt;
+        left: -100pt;
+        transform: scale(0.2,0.2);
+    }
+    100%{
+        color: darksalmon;
+        background-color: yellow;
+        top: 28pt;
+        left: 30pt;
+    }
+}
 @font-face {
     font-family: "Caviar Dreams";
     src: url(../fonts/Caviar-Dreams/CaviarDreams.ttf);
@@ -138,8 +158,10 @@ nav a:link, nav a:visited {
 }
 
 nav a:active, nav a:hover {
-    color: darksalmon;
     text-decoration: none;
+    animation-name: navlinks;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 form {
@@ -235,6 +257,16 @@ header{
 .pos4 {
     top: 0pt;
     right: 20pt;
+}
+
+.pos5#main{
+    /* top: 28pt;
+    left: 30pt;
+    background-color: yellow; */
+    width: 100pt;
+    animation-name: orderlink;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .pos5{
